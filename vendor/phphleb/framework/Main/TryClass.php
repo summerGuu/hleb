@@ -15,11 +15,11 @@ class TryClass
 
     public function is_connect()
     {
-        return isset((new MainConnector())->add()[$this->classname]);
+        return isset( (new MainConnector())->add()[$this->classname]) &&  class_exists($this->classname);
     }
 
     public function is_exists()
     {
-        return class_exists($this->classname, false);
+        return class_exists($this->classname);
     }
 }

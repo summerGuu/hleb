@@ -10,4 +10,11 @@ class PageController extends \MainController
        return HLEB_START - microtime(true);
     }
 
+    function ajax(){
+
+        $array = array('<foo>',"'bar'",'"baz"','&blong&', "\xc3\xa9");
+
+        return strval(json_encode($array));
+    }
+
 }
