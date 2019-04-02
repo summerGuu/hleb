@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use Hleb\Constructor\Handlers\Request;
+
 class PageController extends \MainController
 {
 
@@ -12,7 +14,7 @@ class PageController extends \MainController
 
     function ajax(){
 
-        $array = array('<foo>',"'bar'",'"baz"','&blong&', "\xc3\xa9");
+        $array = array(Request::get('page'), HLEB_START - microtime(true));
 
         return strval(json_encode($array));
     }
