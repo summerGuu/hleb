@@ -45,4 +45,6 @@ if (file_exists(__DIR__ . '/../start.hleb.php')) {
     require __DIR__ . '/../default.start.hleb.php';
 }
 
+echo HLEB_START - microtime(true);
+
 exit();
