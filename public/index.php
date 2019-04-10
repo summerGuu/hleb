@@ -11,7 +11,7 @@ define('HLEB_START', microtime(true));
 
 define('HLEB_PUBLIC_DIR', __DIR__);
 
-define('HLEB_FRAME_VERSION', "1.0.1");
+define('HLEB_FRAME_VERSION', "1.0.2");
 
 
 /*
@@ -44,7 +44,5 @@ if (file_exists(__DIR__ . '/../start.hleb.php')) {
 } else {
     require __DIR__ . '/../default.start.hleb.php';
 }
-
-echo HLEB_START - microtime(true);
 
 exit();
