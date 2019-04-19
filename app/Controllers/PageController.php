@@ -14,7 +14,7 @@ class PageController extends \MainController
 
     function ajax(){
 
-        $array = array(Request::get('page'), HLEB_START - microtime(true));
+        $array = array(Request::get('page'), "time" => HLEB_START - microtime(true));
 
         return strval(json_encode($array));
     }

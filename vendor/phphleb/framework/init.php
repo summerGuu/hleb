@@ -125,7 +125,7 @@ require HLEB_PROJECT_DIRECTORY . "/Main/Info.php";
 
 require HLEB_PROJECT_DIRECTORY . "/Scheme/Home/Main/Connector.php";
 
-require HLEB_GLOBAL_DIRECTORY . "/app/Optional/MainConnector.php";
+require HLEB_GLOBAL_DIRECTORY . "/app/Optional/MainConnector.php"; 
 
 // Чтобы установить другое название каталога 'vendor' добавить в константы HLEB_VENDOR_DIRECTORY
 if(defined('HLEB_VENDOR_DIRECTORY')){
