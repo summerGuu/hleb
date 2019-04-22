@@ -6,7 +6,7 @@ define('HLEB_PROJECT_DIRECTORY', __DIR__);
 
 define('HLEB_PROJECT_VERSION', "1");
 
-define('HLEB_PROJECT_FULL_VERSION', "1.0.3");
+define('HLEB_PROJECT_FULL_VERSION', "1.0.5");
 
 $GLOBALS["HLEB_PROJECT_UPDATES"] = ["phphleb/hleb" => HLEB_FRAME_VERSION, "phphleb/framework" => HLEB_PROJECT_FULL_VERSION ];
 
@@ -125,7 +125,7 @@ require HLEB_PROJECT_DIRECTORY . "/Main/Info.php";
 
 require HLEB_PROJECT_DIRECTORY . "/Scheme/Home/Main/Connector.php";
 
-require HLEB_GLOBAL_DIRECTORY . "/app/Optional/MainConnector.php"; 
+require HLEB_GLOBAL_DIRECTORY . "/app/Optional/MainConnector.php";
 
 // Чтобы установить другое название каталога 'vendor' добавить в константы HLEB_VENDOR_DIRECTORY
 if(defined('HLEB_VENDOR_DIRECTORY')){
@@ -145,7 +145,7 @@ if(HLEB_PROJECT_CLASSES_AUTOLOAD) {
 }
 
 
-// Эти классы загружатся в любом случае
+// Эти классы загрузятся в любом случае
 
 require HLEB_PROJECT_DIRECTORY . "/Constructor/Routes/MainRoute.php";
 
