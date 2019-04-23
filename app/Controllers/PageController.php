@@ -19,4 +19,11 @@ class PageController extends \MainController
         return strval(json_encode($array));
     }
 
+    function map(){
+
+        $array = array(Request::get(), "time" => HLEB_START - microtime(true));
+
+        return render("main", $array);
+    }
+
 }

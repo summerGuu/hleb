@@ -190,6 +190,7 @@ if (file_exists(HLEB_GLOBAL_DIRECTORY . '/' . HLEB_VENDOR_DIRECTORY . '/autoload
 function hl_main_autoloader($class)
 {
     if(HLEB_PROJECT_CLASSES_AUTOLOAD){
+
         \Hleb\Main\MainAutoloader::get($class);
     }
     if(HLEB_PROJECT_DEBUG){
